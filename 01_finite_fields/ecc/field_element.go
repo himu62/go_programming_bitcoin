@@ -50,6 +50,7 @@ func (fe *FieldElement) Add(other *FieldElement) (*FieldElement, error) {
 	}, nil
 }
 
+// practice 3
 func (fe *FieldElement) Sub(other *FieldElement) (*FieldElement, error) {
 	if fe.prime != other.prime {
 		return &FieldElement{}, fmt.Errorf("unequal primes %d != %d", fe.prime, other.prime)
